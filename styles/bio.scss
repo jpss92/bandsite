@@ -26,13 +26,14 @@ ul {
     &__logo {
         width: 7.5rem;
     }
-}
 
-.left {
-    float: left;
-}
-.right {
-    float: right;
+    &__left {
+        float: left;
+    }
+    
+    &__right {
+        float: right;
+    }
 }
 
 .hero {
@@ -41,6 +42,10 @@ ul {
     background-repeat: no-repeat;
     height: 65vw;
     vertical-align: middle;
+
+    &__name {
+        color: $white-color;
+    }
 }
 
 .about {
@@ -61,6 +66,7 @@ ul {
     }
 }
 
-footer {
+.footer {
     background-color: $bandsite-black-color;
+    color: $white-color;
 }

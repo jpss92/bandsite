@@ -25,12 +25,10 @@ ul {
 .nav__logo {
   width: 7.5rem;
 }
-
-.left {
+.nav__left {
   float: left;
 }
-
-.right {
+.nav__right {
   float: right;
 }
 
@@ -40,6 +38,9 @@ ul {
   background-repeat: no-repeat;
   height: 65vw;
   vertical-align: middle;
+}
+.hero__name {
+  color: #ffffff;
 }
 
 .about__img {
@@ -52,6 +53,7 @@ ul {
   height: auto;
 }
 
-footer {
+.footer {
   background-color: #323232;
+  color: #ffffff;
 }/*# sourceMappingURL=bio.css.map */
