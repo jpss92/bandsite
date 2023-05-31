@@ -1,57 +1,32 @@
 @import '../styles/partials/_variable';
-* {
-    list-style: none;
-}
-ul {
-    padding: 0;
-}
-.nav {
-    background-color: $bandsite-black-color;
-    width: 100%;
-    text-align: center;
-    height: 5rem;
-    color: $white-color;
-
-    &__list {
-        
-        &--item {
-            display: inline-block;
-            width: 49%;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 700;
-        }
-    }
-
-    &__logo {
-        width: 7.5rem;
-    }
-
-    &__left {
-        float: left;
-    }
-    
-    &__right {
-        float: right;
-    }
-}
 
 .hero {
     background-image: url(../Assets/Images/hero-bio.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 65vw;
-    vertical-align: middle;
+    
+   
 
     &__name {
         color: $white-color;
+        position: relative;
+        top: -15rem;
+        left: 6rem;
     }
+    &__bkgnd {
+        &--color {
+            background-color: $bandsite-black-color;
+            background-size: cover;
+            height: 100%;
+            opacity: 50%;   
+        }
+    }
+    
 }
-
 .about {
 
     &__img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 }
@@ -60,13 +35,17 @@ ul {
 
     &__list {
         &--item {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         }
     }
 }
 
-.footer {
-    background-color: $bandsite-black-color;
-    color: $white-color;
+@include tablet {
+    
+    .footer {
+
+        display: flex;
+
+    }
 }

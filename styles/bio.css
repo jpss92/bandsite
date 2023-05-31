@@ -1,59 +1,36 @@
 /******* Primary Colors *******/
 /***** Seconday Colors *******/
-* {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-}
-
-.nav {
-  background-color: #323232;
-  width: 100%;
-  text-align: center;
-  height: 5rem;
-  color: #ffffff;
-}
-.nav__list--item {
-  display: inline-block;
-  width: 49%;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-}
-.nav__logo {
-  width: 7.5rem;
-}
-.nav__left {
-  float: left;
-}
-.nav__right {
-  float: right;
-}
-
+/**** Breakpoints*****/
 .hero {
   background-image: url(../Assets/Images/hero-bio.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 65vw;
-  vertical-align: middle;
 }
 .hero__name {
   color: #ffffff;
+  position: relative;
+  top: -15rem;
+  left: 6rem;
+}
+.hero__bkgnd--color {
+  background-color: #323232;
+  background-size: cover;
+  height: 100%;
+  opacity: 50%;
 }
 
 .about__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .gallery__list--item {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-.footer {
-  background-color: #323232;
-  color: #ffffff;
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
 }/*# sourceMappingURL=bio.css.map */

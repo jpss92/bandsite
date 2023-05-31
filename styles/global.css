@@ -1,0 +1,41 @@
+/******* Primary Colors *******/
+/***** Seconday Colors *******/
+/**** Breakpoints*****/
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.nav {
+  background-color: #323232;
+  text-align: center;
+  height: 5rem;
+  color: #ffffff;
+  padding: 1rem;
+}
+.nav__list--item {
+  display: inline-block;
+  width: 49%;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.nav__logo {
+  width: 7.5rem;
+}
+.nav__left {
+  float: left;
+}
+.nav__right {
+  float: right;
+}
+
+.footer {
+  background-color: #323232;
+  color: #ffffff;
+}/*# sourceMappingURL=global.css.map */
