@@ -1,6 +1,6 @@
 /******* Primary Colors *******/
 /***** Seconday Colors *******/
-/**** Breakpoints*****/
+/****Sizes*****/
 * {
   list-style: none;
   margin: 0;
@@ -13,13 +13,13 @@
   height: 5rem;
   color: #ffffff;
   padding: 1rem;
+  padding-bottom: 0;
 }
 .nav__list--item {
   display: inline-block;
-  width: 49%;
+  width: 50%;
   font-size: 0.875rem;
   line-height: 2rem;
-  font-weight: 700;
 }
 .nav__logo {
   width: 7.5rem;
@@ -27,7 +27,7 @@
 .nav__left {
   position: absolute;
   top: 3.5rem;
-  left: -1rem;
+  left: -0.0625rem;
 }
 .nav__right {
   position: absolute;
@@ -37,4 +37,28 @@
 .footer {
   background-color: #323232;
   color: #ffffff;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+.footer__social {
+  display: flex;
+}
+.footer__icon {
+  margin: 1.5rem;
+}
+.footer__info {
+  padding: 1rem;
+}
+.footer__info--spacing {
+  margin-top: 0.5rem;
+}
+.footer__contact--title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.footer__logo {
+  padding-bottom: 0.5rem;
+}
+.footer__copyright {
+  margin-top: 4rem;
 }/*# sourceMappingURL=global.css.map */

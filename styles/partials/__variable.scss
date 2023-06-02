@@ -10,16 +10,12 @@ $bandsite-dark-black-color: #000000;
 $mercury-color: #e1e1e1;
 $alabaster-color: #fafafa;
 
-/**** Breakpoints*****/
+/****Sizes*****/
+$font10: .625rem;
+$font13: .8125rem;
+$font14: .875rem;
+$font24: 1.5rem;
+$font12: .75rem;
+$font36: 2.25rem;
+$font60: 3.75rem;
 
-@mixin tablet {
-    @media (min-width: 768px) {
-        @content
-    }
-}
-
-@mixin desktop {
-    @media (min-width: 1280px) {
-        @content
-    }
-}
