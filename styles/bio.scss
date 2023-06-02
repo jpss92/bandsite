@@ -7,7 +7,7 @@
     &__left {
      
         border-bottom: $white-color solid .125rem;
-        padding-bottom: 6px;
+        padding-bottom: .25rem;
         font-weight: 700;
     }
 }
@@ -96,19 +96,103 @@
 @include tablet {
     
     .nav {
-        display: flex;
        
-        width: 100%;
-
+        &__logo {
+            
+        }
+    
         &__list {
-
-            align-items: center;
+            
+            
+            
             &--item {
-                padding-right: 2rem;
-                
+                  
+            }
+        }
+
+        &__left {
+            position: relative;
+            top: -1rem;
+            border-bottom: $white-color solid 3rem;
+
+        }
+    }
+
+    .hero {
+        height: 68vw;
+
+        &__name {
+            font-size: $font60;
+            top: 50%;
+        }
+    }
+
+    .about {
+        &__container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        &__heading {
+            font-size: $font36;
+            padding: 3rem 1rem 2.25rem;
+        }
+
+        &__quote {
+            font-size: $font24;
+            line-height: 2rem;
+            padding: 2.25rem;
+
+            &--author {
+                font-size: $font14;
+                line-height: 1.375rem;
+                padding: 2.25rem;
+            }
+        }
+
+        &__title {
+            font-size: $font24;
+        }
+
+        &__article {
+            display: flex;
+
+            &--column {
+            flex: 50%;
+            padding: .625rem;
+            font-size: $font14;
+            line-height: 1.375rem;
             }
         }
     }
+
+    .gallery {
+
+        &__heading {
+            font-size: $font36;
+            line-height: 2.75rem;
+            padding: 2.375rem, 0, 2.25rem;
+        }
+
+        &__list {
+            
+
+            &--item {
+                width: 30%;
+                padding: .625rem;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    
+
+
 
     
     
