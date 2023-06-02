@@ -3,20 +3,18 @@
 /**** Breakpoints*****/
 .hero {
   background-image: url(../Assets/Images/hero-bio.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 65vw;
 }
 .hero__name {
   color: #ffffff;
   position: relative;
-  top: -15rem;
-  left: 6rem;
+  top: 6rem;
 }
 .hero__bkgnd--color {
   background-color: #323232;
-  background-size: cover;
-  height: 100%;
-  opacity: 50%;
+  background-size: 65vw;
 }
 
 .about__img {
@@ -30,6 +28,19 @@
 }
 
 @media (min-width: 768px) {
+  .nav {
+    display: flex;
+    width: 100%;
+  }
+  .nav__list {
+    align-items: center;
+  }
+  .nav__list--item {
+    padding-right: 2rem;
+  }
+  .hero {
+    width: 50rem;
+  }
   .footer {
     display: flex;
   }

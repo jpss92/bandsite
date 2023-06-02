@@ -5,9 +5,7 @@
     padding: 0;
 }
 
-ul {
-    padding: 0;
-}
+
 .nav {
     background-color: $bandsite-black-color;
     
@@ -32,11 +30,14 @@ ul {
     }
 
     &__left {
-        float: left;
+        position: absolute;
+        top: 3.5rem;
+        left: -1rem;
     }
     
     &__right {
-        float: right;
+        position: absolute;
+        top: 3.5rem;
     }
 }
 

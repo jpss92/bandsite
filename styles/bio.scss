@@ -2,23 +2,23 @@
 
 .hero {
     background-image: url(../Assets/Images/hero-bio.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    
-   
+    height: 65vw;
 
     &__name {
         color: $white-color;
         position: relative;
-        top: -15rem;
-        left: 6rem;
+        top: 6rem;
+        
     }
     &__bkgnd {
         &--color {
             background-color: $bandsite-black-color;
-            background-size: cover;
-            height: 100%;
-            opacity: 50%;   
+            background-size: 65vw;
+            
+
+            
         }
     }
     
@@ -43,6 +43,24 @@
 
 @include tablet {
     
+    .nav {
+        display: flex;
+       
+        width: 100%;
+
+        &__list {
+
+            align-items: center;
+            &--item {
+                padding-right: 2rem;
+                
+            }
+        }
+    }
+
+    .hero {
+        width: 50rem;
+    }
     .footer {
 
         display: flex;
