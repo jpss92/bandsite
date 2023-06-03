@@ -62,4 +62,50 @@
 .footer__copyright {
   margin-top: 3rem;
   font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 23rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .footer__contact {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 3rem;
+  }
+  .footer__contact--title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+  }
+  .footer__social {
+    position: relative;
+    top: -4.3rem;
+    left: 18rem;
+    width: 30%;
+  }
+  .footer__icon {
+    margin: 2.25rem;
+  }
+  .footer__info {
+    height: 80%;
+    padding: 0;
+  }
+  .footer__info--spacing {
+    margin-top: 1rem;
+  }
+  .footer__logo {
+    position: relative;
+    top: -19rem;
+    left: 37rem;
+  }
+  .copyright {
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+  }
 }/*# sourceMappingURL=global.css.map */

@@ -73,7 +73,13 @@
   .nav__left {
     position: relative;
     top: -1rem;
+    left: -14rem;
     border-bottom: #ffffff solid 3rem;
+  }
+  .nav__right {
+    position: relative;
+    top: -1rem;
+    left: -14rem;
   }
   .hero {
     height: 68vw;
@@ -122,8 +128,5 @@
   .gallery__list--item {
     width: 30%;
     padding: 0.625rem;
-  }
-  .footer {
-    display: flex;
   }
 }/*# sourceMappingURL=bio.css.map */

@@ -70,7 +70,7 @@
 
     &__contact {
         &--title {
-            font-size: 1.5rem;
+            font-size: $font24;
             padding-top: 1rem;
         }
     }
@@ -82,5 +82,62 @@
     &__copyright {
         margin-top: 3rem;
         font-size: $font12;
+    }
+}
+
+@include tablet {
+    
+    .footer {
+        height: 23rem;
+        font-size: $font14;
+        line-height: 1.25rem;
+        
+        &__contact {
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 3rem;
+            
+           
+
+            &--title {
+                font-size: $font36;
+                line-height: 2.75rem;
+                padding-top: 2rem;
+                padding-left: 2.5rem;
+            }
+        }
+
+        &__social {
+            position: relative;
+            top: -4.3rem;
+            left: 18rem;
+            width: 30%;
+            
+        }  
+
+        &__icon {
+            margin: 2.25rem;
+        }
+
+        &__info {
+            height: 80%;
+            padding: 0;
+            &--spacing {
+                margin-top: 1rem;
+            }
+        }
+
+        &__logo {
+            position: relative;
+            top: -19rem;
+            left: 37rem;
+        }
+
+    } 
+    .copyright {
+        position: relative;
+        bottom: 5rem;
+        left: 2.5rem;
     }
 }

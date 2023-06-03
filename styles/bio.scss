@@ -96,25 +96,18 @@
 @include tablet {
     
     .nav {
-       
-        &__logo {
-            
-        }
-    
-        &__list {
-            
-            
-            
-            &--item {
-                  
-            }
-        }
 
         &__left {
             position: relative;
             top: -1rem;
+            left: -14rem;
             border-bottom: $white-color solid 3rem;
+        }
 
+        &__right {
+            position: relative;
+            top: -1rem;
+            left: -14rem;
         }
     }
 
@@ -186,14 +179,4 @@
         }
     }
 
-    .footer {
-        display: flex;
-    }
-
-    
-
-
-
-    
-    
 }
