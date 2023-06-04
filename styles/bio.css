@@ -1,12 +1,6 @@
 /******* Primary Colors *******/
 /***** Seconday Colors *******/
 /****Sizes*****/
-.nav__left {
-  border-bottom: #ffffff solid 0.125rem;
-  padding-bottom: 0.25rem;
-  font-weight: 700;
-}
-
 .hero {
   background-image: url(../Assets/Images/hero-bio.jpg);
   background-size: cover;
@@ -71,15 +65,9 @@
 
 @media (min-width: 768px) {
   .nav__left {
-    position: relative;
-    top: -1rem;
-    left: -14rem;
-    border-bottom: #ffffff solid 3rem;
-  }
-  .nav__right {
-    position: relative;
-    top: -1rem;
-    left: -14rem;
+    -webkit-text-decoration: underline 0.1875rem;
+            text-decoration: underline 0.1875rem;
+    text-underline-offset: 2.1rem;
   }
   .hero {
     height: 68vw;
@@ -87,12 +75,14 @@
   .hero__name {
     font-size: 3.75rem;
     top: 50%;
+    display: inline-block;
   }
   .about__container {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    margin-bottom: 1rem;
   }
   .about__heading {
     font-size: 2.25rem;
@@ -125,8 +115,42 @@
     line-height: 2.75rem;
     padding: 2.375rem, 0, 2.25rem;
   }
+  .gallery__list {
+    margin-top: 1.625rem;
+  }
   .gallery__list--item {
     width: 30%;
     padding: 0.625rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 55vw;
+  }
+  .hero__name {
+    top: 47%;
+    left: 11%;
+  }
+  .about {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__img {
+    background-size: 80vw;
+    height: 30rem;
+  }
+  .about__quote {
+    display: inline-block;
+    word-wrap: normal;
+    width: 80%;
+    margin-left: -1.5rem;
+    padding-top: 1.25rem;
+  }
+  .gallery {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
   }
 }/*# sourceMappingURL=bio.css.map */

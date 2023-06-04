@@ -2,16 +2,6 @@
 @import './partials/_mixins';
 @import './partials/_fonts';
 
-.nav {
-
-    &__left {
-     
-        border-bottom: $white-color solid .125rem;
-        padding-bottom: .25rem;
-        font-weight: 700;
-    }
-}
-
 .hero {
     
     background-image: url(../Assets/Images/hero-bio.jpg);
@@ -98,16 +88,9 @@
     .nav {
 
         &__left {
-            position: relative;
-            top: -1rem;
-            left: -14rem;
-            border-bottom: $white-color solid 3rem;
-        }
-
-        &__right {
-            position: relative;
-            top: -1rem;
-            left: -14rem;
+            
+            text-decoration: underline .1875rem;
+            text-underline-offset: 2.1rem;  
         }
     }
 
@@ -117,6 +100,7 @@
         &__name {
             font-size: $font60;
             top: 50%;
+            display: inline-block;
         }
     }
 
@@ -126,6 +110,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;
+            margin-bottom: 1rem;
         }
 
         &__heading {
@@ -167,10 +152,11 @@
             font-size: $font36;
             line-height: 2.75rem;
             padding: 2.375rem, 0, 2.25rem;
+            
         }
 
         &__list {
-            
+            margin-top: 1.625rem;
 
             &--item {
                 width: 30%;
@@ -179,4 +165,43 @@
         }
     }
 
+}
+
+@include desktop {
+
+    .hero {
+
+        height: 55vw;
+
+        &__name {
+            top: 47%;
+            left: 11%;
+        }
+    }
+
+    .about {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__img {
+            background-size: 80vw;
+            height: 30rem;
+        }
+
+        &__quote {
+            display: inline-block;
+            word-wrap: normal;
+            width: 80%;
+            margin-left: -1.5rem;
+            padding-top: 1.25rem;
+        }
+    }
+
+    .gallery {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4rem;
+    }
 }
