@@ -1,6 +1,34 @@
 /******* Primary Colors *******/
 /***** Seconday Colors *******/
 /****Sizes*****/
+@font-face {
+  font-family: "AnReg";
+  src: url("../../Assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnDemi";
+  src: url("../../Assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnBold";
+  src: url("../../Assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: AnReg;
+}
+
+.nav__left {
+  border-bottom: #ffffff solid 0.125rem;
+  padding-bottom: 0.1875rem;
+  font-family: AnDemi;
+}
+
 .hero {
   background-image: url(../Assets/Images/hero-bio.jpg);
   background-size: cover;
@@ -15,6 +43,7 @@
   top: 45%;
   left: 5%;
   font-size: 1.5rem;
+  font-family: AnDemi;
 }
 .hero__bkgnd--color {
   background-color: #323232;
@@ -32,15 +61,18 @@
 }
 .about__heading {
   font-size: 1.5rem;
+  font-family: AnDemi;
 }
 .about__img {
   width: 100%;
-  height: auto;
   padding: 1rem 0;
 }
 .about__quote {
   line-height: 1.375rem;
-  font-weight: 700;
+  font-family: AnDemi;
+}
+.about__quote--author {
+  font-family: AnDemi;
 }
 .about__title {
   padding: 1rem 0;
@@ -55,7 +87,7 @@
 .gallery__heading {
   font-size: 1.5rem;
   line-height: 32px;
-  font-weight: 700;
+  font-family: AnDemi;
 }
 .gallery__list--item {
   width: 100%;
@@ -65,9 +97,10 @@
 
 @media (min-width: 768px) {
   .nav__left {
+    border: none;
     -webkit-text-decoration: underline 0.1875rem;
             text-decoration: underline 0.1875rem;
-    text-underline-offset: 2.1rem;
+    text-underline-offset: 1.9rem;
   }
   .hero {
     height: 68vw;
@@ -76,6 +109,7 @@
     font-size: 3.75rem;
     top: 50%;
     display: inline-block;
+    width: 80%;
   }
   .about__container {
     display: block;
@@ -92,11 +126,13 @@
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 2.25rem;
+    margin-left: -2.5rem;
+    padding-top: 1.25rem;
   }
   .about__quote--author {
     font-size: 0.875rem;
     line-height: 1.375rem;
-    padding: 2.25rem;
+    padding: 1rem;
   }
   .about__title {
     font-size: 1.5rem;
@@ -114,6 +150,7 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding: 2.375rem, 0, 2.25rem;
+    margin-left: 0.6rem;
   }
   .gallery__list {
     margin-top: 1.625rem;
@@ -138,19 +175,22 @@
   }
   .about__img {
     background-size: 80vw;
-    height: 30rem;
   }
   .about__quote {
     display: inline-block;
     word-wrap: normal;
-    width: 80%;
+    width: 87%;
     margin-left: -1.5rem;
     padding-top: 1.25rem;
+  }
+  .about__article--column {
+    margin-right: 1rem;
   }
   .gallery {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 4rem;
+    margin-bottom: 1.25rem;
   }
 }/*# sourceMappingURL=bio.css.map */

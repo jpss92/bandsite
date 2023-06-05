@@ -2,6 +2,19 @@
 @import './partials/_mixins';
 @import './partials/_fonts';
 
+* {
+    font-family: AnReg;
+}
+
+.nav {
+
+    &__left {
+        border-bottom: $white-color solid .125rem;
+        padding-bottom: .1875rem;
+        font-family: AnDemi;
+    }
+}
+
 .hero {
     
     background-image: url(../Assets/Images/hero-bio.jpg);
@@ -17,6 +30,7 @@
         top: 45%;
         left: 5%;
         font-size: $font24;
+        font-family: AnDemi;
         
     }
     &__bkgnd {
@@ -41,18 +55,22 @@
 
     &__heading {
         font-size: $font24;
+        font-family: AnDemi;
     }
 
     &__img {
         width: 100%;
-        height: auto;
         padding: 1rem 0;
         
     }
 
     &__quote {
         line-height: 1.375rem;
-        font-weight: 700;
+        font-family: AnDemi;
+
+        &--author {
+            font-family: AnDemi;
+        }
         
     }
 
@@ -71,7 +89,7 @@
     &__heading {
         font-size: $font24;
         line-height: 32px;
-        font-weight: 700;
+        font-family: AnDemi;
     }
 
     &__list {
@@ -88,9 +106,9 @@
     .nav {
 
         &__left {
-            
+            border: none;
             text-decoration: underline .1875rem;
-            text-underline-offset: 2.1rem;  
+            text-underline-offset: 1.9rem;  
         }
     }
 
@@ -101,6 +119,7 @@
             font-size: $font60;
             top: 50%;
             display: inline-block;
+            width: 80%;
         }
     }
 
@@ -122,16 +141,21 @@
             font-size: $font24;
             line-height: 2rem;
             padding: 2.25rem;
+            margin-left: -2.5rem;
+            padding-top: 1.25rem;
+            
 
             &--author {
                 font-size: $font14;
                 line-height: 1.375rem;
-                padding: 2.25rem;
+                padding: 1rem;
+                
             }
         }
 
         &__title {
             font-size: $font24;
+            
         }
 
         &__article {
@@ -152,6 +176,7 @@
             font-size: $font36;
             line-height: 2.75rem;
             padding: 2.375rem, 0, 2.25rem;
+            margin-left: .6rem;
             
         }
 
@@ -186,15 +211,21 @@
 
         &__img {
             background-size: 80vw;
-            height: 30rem;
+            
         }
 
         &__quote {
             display: inline-block;
             word-wrap: normal;
-            width: 80%;
+            width: 87%;
             margin-left: -1.5rem;
             padding-top: 1.25rem;
+        }
+
+        &__article {
+            &--column {
+                margin-right: 1rem;
+            }
         }
     }
 
@@ -203,5 +234,6 @@
         margin-left: auto;
         margin-right: auto;
         padding-left: 4rem;
+        margin-bottom: 1.25rem;
     }
 }
