@@ -1,0 +1,44 @@
+/******* Primary Colors *******/
+/***** Seconday Colors *******/
+/****Sizes*****/
+@font-face {
+  font-family: "AnReg";
+  src: url("../../Assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnDemi";
+  src: url("../../Assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnBold";
+  src: url("../../Assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.nav__right {
+  border-bottom: #ffffff solid 0.125rem;
+  padding-bottom: 0.1875rem;
+  font-family: AnDemi;
+}
+
+@media (min-width: 768px) {
+  .nav__right {
+    border: none;
+    -webkit-text-decoration: underline 0.1875rem;
+            text-decoration: underline 0.1875rem;
+    text-underline-offset: 1.9rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 55vw;
+  }
+  .hero__name {
+    top: 47%;
+    left: 11%;
+  }
+}/*# sourceMappingURL=shows.css.map */

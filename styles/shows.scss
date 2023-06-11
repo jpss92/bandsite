@@ -1,0 +1,37 @@
+@import '../styles/partials/_variable';
+@import './partials/_mixins';
+@import './partials/_fonts';
+
+.nav {
+
+    &__right {
+        border-bottom: $white-color solid .125rem;
+        padding-bottom: .1875rem;
+        font-family: AnDemi;
+    }
+}
+
+@include tablet {
+    
+    .nav {
+
+        &__right {
+            border: none;
+            text-decoration: underline .1875rem;
+            text-underline-offset: 1.9rem;  
+        }
+    }
+}
+
+@include desktop {
+
+    .hero {
+
+        height: 55vw;
+
+        &__name {
+            top: 47%;
+            left: 11%;
+        }
+    }
+}
