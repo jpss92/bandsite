@@ -11,6 +11,42 @@
     }
 }
 
+.hero {
+    background-image: url(../Assets/Images/hero-shows.jpg);
+    background-size: cover;
+    height: 100VW;
+    color: $white-color;
+
+    &__band {
+
+        &--album {
+
+            &-title {
+                position: relative;
+                top: 2.5rem;
+            }
+
+            &-song {
+                position: relative;
+                top: 4rem;
+            }
+        }
+    }
+
+    &__bkgnd {
+
+        &--color {
+        
+            background-color: $bandsite-black-color;
+            background-size: cover;  
+            position: absolute;
+            width: 100%;
+            height: 100vw;
+            opacity: 50%;
+        }
+    }
+}
+
 @include tablet {
     
     .nav {
