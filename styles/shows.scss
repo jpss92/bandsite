@@ -14,7 +14,7 @@
 .hero {
     background-image: url(../Assets/Images/hero-shows.jpg);
     background-size: cover;
-    height: 100VW;
+    height: 100vw;
     color: $white-color;
 
     &__band {
@@ -22,15 +22,25 @@
         &--album {
 
             &-title {
-                position: relative;
-                top: 2.5rem;
+                position: absolute;
+                top: 15%;
+                
             }
 
             &-song {
-                position: relative;
-                top: 4rem;
+                position: absolute;
+                top: 22%;
+                font-size: $font24;
+                word-wrap: normal;
+                width: 70%;
+                font-weight: 700;
             }
         }
+    }
+
+    &__body {
+        margin-left: 6%;
+        line-height: 2rem;
     }
 
     &__bkgnd {
@@ -44,6 +54,52 @@
             height: 100vw;
             opacity: 50%;
         }
+    }
+}
+
+.showtimes {
+
+    padding: 1.5rem 1rem 1rem 1rem;
+
+    &__title {
+        font-size: $font24;
+        font-weight: 700;
+    }
+    
+
+    &__list {
+        border-top: .0625rem solid;
+        border-bottom: .0625rem solid;
+        border-color: $silver-color;
+        margin: 1rem 0 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+
+        
+        font-size: $font13;
+
+        &--title {
+            
+        }
+
+        &--date {
+
+            
+
+        }
+    }
+
+    &__button {
+        width: 90%;
+        margin-left: 1rem;
+        background-color: $bandsite-black-color;
+        height: 2.5rem;
+        border-radius: .25rem;
+        color: $white-color;
+        line-height: 1.25rem;
+        font-weight: 700;
+
     }
 }
 

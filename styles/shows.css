@@ -1,6 +1,5 @@
 /******* Primary Colors *******/
 /***** Seconday Colors *******/
-/****Sizes*****/
 @font-face {
   font-family: "AnReg";
   src: url("../../Assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../Assets/Font/Alternative-files/AvenirNextLTPro.ttf") format("truetype");
@@ -19,6 +18,7 @@
   font-weight: 700;
   font-style: normal;
 }
+/****Sizes*****/
 .nav__right {
   border-bottom: #ffffff solid 0.125rem;
   padding-bottom: 0.1875rem;
@@ -28,16 +28,24 @@
 .hero {
   background-image: url(../Assets/Images/hero-shows.jpg);
   background-size: cover;
-  height: 100VW;
+  height: 100vw;
   color: #ffffff;
 }
 .hero__band--album-title {
-  position: relative;
-  top: 2.5rem;
+  position: absolute;
+  top: 15%;
 }
 .hero__band--album-song {
-  position: relative;
-  top: 4rem;
+  position: absolute;
+  top: 22%;
+  font-size: 1.5rem;
+  word-wrap: normal;
+  width: 70%;
+  font-weight: 700;
+}
+.hero__body {
+  margin-left: 6%;
+  line-height: 2rem;
 }
 .hero__bkgnd--color {
   background-color: #323232;
@@ -46,6 +54,34 @@
   width: 100%;
   height: 100vw;
   opacity: 50%;
+}
+
+.showtimes {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+.showtimes__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.showtimes__list {
+  border-top: 0.0625rem solid;
+  border-bottom: 0.0625rem solid;
+  border-color: #afafaf;
+  margin: 1rem 0 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.8125rem;
+}
+.showtimes__button {
+  width: 90%;
+  margin-left: 1rem;
+  background-color: #323232;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  line-height: 1.25rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
