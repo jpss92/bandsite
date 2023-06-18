@@ -53,6 +53,16 @@
   top: 2.6rem;
 }
 
+button {
+  width: 95%;
+  background-color: #323232;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
 .footer {
   background-color: #323232;
   color: #ffffff;

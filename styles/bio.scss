@@ -101,6 +101,60 @@
     }
 }
 
+.comment {
+
+    &__title {
+        font-weight: 700;
+        line-height: 2rem;
+        font-size: $font24;
+        margin: 1.5rem 1rem 0;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 1rem 0rem 4rem;
+    }
+
+    &__button {
+        margin: 0 1rem 1rem 4rem;
+        width:75%;
+    }
+
+    &__profile {
+
+        &--image {
+            border-radius: 50%;
+            width: 12%;
+            height: 2.5rem;
+            position: relative;
+            top: -15rem;
+            left: 1rem;
+            
+            object-fit:cover;
+        }
+    }
+}
+
+label {
+    width: 85%;
+    margin-bottom: .25rem;
+    color: $silver-color;
+}
+
+input[type="text"] {
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+    height: 2.25rem;
+    border-radius: .25rem;
+    border: .0625rem $mercury-color solid;
+}
+
+input[name="comment"] {
+    height: 6rem;
+}
+
 @include tablet {
     
     .nav {

@@ -42,6 +42,16 @@
     }
 }
 
+button {
+    width: 95%;
+    background-color: $bandsite-black-color;
+    height: 2.5rem;
+    border-radius: .25rem;
+    color: $white-color;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
 .footer {
     background-color: $bandsite-black-color;
     color: $white-color;

@@ -95,6 +95,51 @@
   padding-top: 1rem;
 }
 
+.comment__title {
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 1rem 0;
+}
+.comment__box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 1rem 0rem 4rem;
+}
+.comment__button {
+  margin: 0 1rem 1rem 4rem;
+  width: 75%;
+}
+.comment__profile--image {
+  border-radius: 50%;
+  width: 12%;
+  height: 2.5rem;
+  position: relative;
+  top: -15rem;
+  left: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+label {
+  width: 85%;
+  margin-bottom: 0.25rem;
+  color: #afafaf;
+}
+
+input[type=text] {
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem #e1e1e1 solid;
+}
+
+input[name=comment] {
+  height: 6rem;
+}
+
 @media (min-width: 768px) {
   .nav__left {
     border: none;

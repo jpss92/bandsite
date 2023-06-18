@@ -37,11 +37,15 @@
 }
 .hero__band--album-song {
   position: absolute;
-  top: 22%;
+  top: 20%;
   font-size: 1.5rem;
   word-wrap: normal;
   width: 70%;
   font-weight: 700;
+}
+.hero__song {
+  position: relative;
+  top: 12rem;
 }
 .hero__body {
   margin-left: 6%;
@@ -57,31 +61,33 @@
 }
 
 .showtimes {
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem 0rem 1rem;
 }
-.showtimes__title {
+.showtimes--title {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 .showtimes__list {
-  border-top: 0.0625rem solid;
   border-bottom: 0.0625rem solid;
-  border-color: #afafaf;
-  margin: 1rem 0 1rem;
-  padding-top: 1rem;
+  border-color: #e1e1e1;
+  margin: 0 0 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 0.8125rem;
 }
+.showtimes__list--title {
+  color: #afafaf;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
 .showtimes__button {
-  width: 90%;
-  margin-left: 1rem;
-  background-color: #323232;
-  height: 2.5rem;
-  border-radius: 0.25rem;
-  color: #ffffff;
-  line-height: 1.25rem;
-  font-weight: 700;
+  margin-top: 1rem;
+}
+
+#showtime__info {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
