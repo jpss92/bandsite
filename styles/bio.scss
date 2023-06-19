@@ -107,13 +107,13 @@
         font-weight: 700;
         line-height: 2rem;
         font-size: $font24;
-        margin: 1.5rem 1rem 0;
+        margin: .5rem 1rem 1rem 1rem;
     }
 
     &__box {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 78%;
         margin: 0 1rem 0rem 4rem;
     }
 
@@ -122,38 +122,83 @@
         width:75%;
     }
 
-    &__profile {
+    &__user {
 
         &--image {
+            width: 2.3rem;
+            height: 2.3rem;
             border-radius: 50%;
-            width: 12%;
-            height: 2.5rem;
             position: relative;
-            top: -15rem;
+            bottom: 12rem;
             left: 1rem;
-            
-            object-fit:cover;
+            object-fit: cover;
+            object-position: -5px;   
         }
+    }
+
+    &__list {
+
+        &--info {
+            border-top: .0625rem solid $mercury-color;
+            border-bottom: .0625rem solid $mercury-color;
+            padding: 1rem;
+            
+            
+    
+
+        }
+    }
+
+    &__text {
+        
+        &--upper {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: .5rem;
+        }
+
+        &--lwr {
+            
+        }
+    }
+
+    &__profile {
+
+        &--img {
+            background-color: $silver-color;
+            border-radius: 50%;
+            width: 20%;
+        }
+    }
+
+    &__comments {
+
     }
 }
 
 label {
-    width: 85%;
+    width: 80%;
     margin-bottom: .25rem;
     color: $silver-color;
 }
 
-input[type="text"] {
+textarea,input[type="text"] {
     margin-right: .75rem;
     margin-bottom: .75rem;
     height: 2.25rem;
     border-radius: .25rem;
     border: .0625rem $mercury-color solid;
+    padding: .5rem;
 }
 
-input[name="comment"] {
-    height: 6rem;
+textarea {
+    height: 5rem;
+    padding: .5rem;
 }
+
+
+
+
 
 @include tablet {
     

@@ -59,20 +59,26 @@
             </div>      
         </section>
 
-        <div>
+        <section>
             <h2 class="comment__title">Join the Conversation</h2>
             <form class="comment__form"></form>
-            <div class="comment__box">
+            
+                
+            <div class="comment__box"> 
                 <label for="userName">Name</label>
-                <input type="text" name="userName" id="userName">
+                <input type="text" placeholder="Enter your name" name="userName" id="userName">
             </div>
             <div class="comment__box">
                 <label for="comment">Comment</label>
-                <input type="text" name="comment" id="comment">
+                <textarea placeholder="Add a new comment" name="comment " id="comment" cols="10" rows="6"></textarea>
             </div>
-            <button class="comment__button" type="submit" value="submit input">COMMENT</button>
-            <img class="comment__profile--image" src="./Assets/Images/Mohan-muruge.jpg" alt="User profile Image">
-        </div>
+            <button class="comment__button" type="submit">COMMENT</button>
+            <img class="comment__user--image" src="./Assets/Images/Mohan-muruge.jpg" alt="User profile Image">
+
+            <div class="comment__section">
+                <ul class="comment__list"></ul>
+            </div>
+        </section>
         
         
         <footer class="footer">
