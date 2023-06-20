@@ -30,17 +30,30 @@ function commentsShow(array) {
 
         unordLi.appendChild(commentLi);
 
+        //image comtainer
+        const imgCont = document.createElement("div");
+        imgCont.classList.add("comment__profile");
+
+        commentLi.appendChild(imgCont);
+
+
+        //Profile img
+        const img = document.createElement("div");
+        img.classList.add("comment__profile--img");
+
+        imgCont.appendChild(img);
+
         //comments text
-        const comments__text = document.createElement("div");
-        comments__text.classList.add("comment__text");
+        const comment__text = document.createElement("div");
+        comment__text.classList.add("comment__text");
 
-
+        commentLi.appendChild(comment__text);
 
         //div top of commenting area
         const upperDiv = document.createElement("div");
         upperDiv.classList.add("comment__text--upper");
 
-        commentLi.appendChild(upperDiv);
+        comment__text.appendChild(upperDiv);
 
 
         //name
@@ -61,7 +74,7 @@ function commentsShow(array) {
         const lwrDiv = document.createElement("div");
         lwrDiv.classList.add("comment__text--lwr");
 
-        commentLi.appendChild(lwrDiv);
+        comment__text.appendChild(lwrDiv);
 
         //comment
         const comment = document.createElement("p");
@@ -71,18 +84,7 @@ function commentsShow(array) {
 
         lwrDiv.appendChild(comment);
 
-        //image comtainer
-        const imgCont = document.createElement("div");
-        imgCont.classList.add("comment__profile");
-
-        commentLi.appendChild(imgCont);
-
-
-        //Profile img
-        const img = document.createElement("div");
-        img.classList.add("comment__profile--img");
-
-        imgCont.appendChild(img);
+        
 
         
     };

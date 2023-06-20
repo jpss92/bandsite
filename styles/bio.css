@@ -103,43 +103,65 @@
 }
 .comment__box {
   display: flex;
-  flex-direction: column;
-  width: 78%;
-  margin: 0 1rem 0rem 4rem;
+  padding-right: 2rem;
 }
 .comment__button {
-  margin: 0 1rem 1rem 4rem;
-  width: 75%;
+  margin: 0 1rem 1rem 5rem;
+  width: 70%;
+}
+.comment__user {
+  display: flex;
+  width: 20%;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 .comment__user--image {
+  display: flex;
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 50%;
-  position: relative;
-  bottom: 12rem;
-  left: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: -5px;
      object-position: -5px;
 }
 .comment__list--info {
+  display: flex;
   border-top: 0.0625rem solid #e1e1e1;
   border-bottom: 0.0625rem solid #e1e1e1;
   padding: 1rem;
+  height: 8rem;
+}
+.comment__text {
+  margin-left: 1rem;
+  font-size: 0.8125rem;
 }
 .comment__text--upper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.5rem;
+  height: 1rem;
 }
-.comment__profile--img {
-  background-color: #afafaf;
-  border-radius: 50%;
+.comment__text--lwr {
+  padding-top: 1rem;
+}
+.comment__profile {
+  display: flex;
+  justify-content: center;
   width: 20%;
 }
+.comment__profile--img {
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  width: 100%;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+.comment__form--add {
+  margin-left: 5rem;
+}
+
 label {
-  width: 80%;
   margin-bottom: 0.25rem;
   color: #afafaf;
 }
@@ -147,15 +169,17 @@ label {
 textarea, input[type=text] {
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
-  height: 2.25rem;
+  height: 1.5rem;
   border-radius: 0.25rem;
   border: 0.0625rem #e1e1e1 solid;
   padding: 0.5rem;
+  width: 99%;
 }
 
 textarea {
   height: 5rem;
   padding: 0.5rem;
+  width: 115%;
 }
 
 @media (min-width: 768px) {
