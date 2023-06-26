@@ -1,13 +1,16 @@
 @import '../styles/partials/_variable';
 @import './partials/_mixins';
 @import './partials/_fonts';
+* {
+    font-family: AnReg
+}
 
 .nav {
 
     &__right {
         border-bottom: $white-color solid .125rem;
         padding-bottom: .1875rem;
-        font-family: AnDemi;
+        font-family: 'AnDemi';
     }
 }
 
@@ -33,7 +36,7 @@
                 font-size: $font24;
                 word-wrap: normal;
                 width: 70%;
-                font-weight: 700;
+                font-family: AnDemi;
             }
         }
     }
@@ -41,10 +44,6 @@
     &__song {
         position: relative;
         top: 12rem;
-        
-
-    
-
     }
 
     &__body {
@@ -70,14 +69,13 @@
 
     padding: 1.5rem 1rem 0rem 1rem;
 
-    &--title {
+    &__title {
         font-size: $font24;
-        font-weight: 700;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+        font-family: AnDemi;
+        margin-top: .75rem;
+        margin-bottom: 1rem; 
     }
     
-
     &__list {
        
         border-bottom: .0625rem solid;
@@ -87,28 +85,37 @@
         padding-bottom: 1rem;
         font-size: $font13;
 
-        &--title {
-
+        &--items {
             color: $silver-color;
-            margin-top: .75rem;
-            margin-bottom: .25rem;
-            
-            
-            
-        }
-
-        &--date {
-
-            
-
+            margin-bottom: .5rem;
         }
     }
-
+    
     &__button {
-        
-
         margin-top: 1rem;
+    }
 
+    &__venue {
+        color: black;
+        margin-top: .25rem;
+        font-size: $font14;
+    }
+
+    &__location {
+        color: black;
+        margin-top: .25rem;
+        font-size: $font14;
+    }
+
+    &__date {
+        color: black;
+        margin-top: .25rem;
+        font-size: $font14;
+    }
+
+    &__label {
+        visibility: hidden;
+        
     }
 }
 
@@ -126,17 +133,167 @@
             text-underline-offset: 1.9rem;  
         }
     }
+
+    .hero {
+        height: 30rem;
+        background-position-y: -5.5rem;
+
+        &__bkgnd {
+            
+            &--color {
+                height: 30rem;
+            }
+        }
+
+        &__band {
+            
+            &--album {
+
+                &-title {
+                    top: 8rem;
+                    font-size: $font24;
+
+                }
+
+                &-song {
+                    top: 11rem;
+                    font-size: $font60;
+                    line-height: 4.25rem;
+                }
+            }
+        }
+
+        &__song {
+            width: 57%;
+            top: 18rem;
+            height: 8rem;
+        }
+    }
+
+
+ .showtimes {
+
+    &__title {
+      font-size: $font36; 
+      margin-left: 10%;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        visibility: visible;
+        justify-content: space-between;
+        margin: 2rem 0 1rem 2.7rem;
+        color: $silver-color;
+        
+        &--fill {
+            margin-right: 7rem;
+
+        }
+    }
+
+
+    &__button {
+       width: 9.375rem;
+       margin-left: 3rem;
+    }
+
+   &__list {
+
+    &--info {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    &--items {
+        width: 25%;
+    }
+   }
+
+   &__venue {
+    
+    &--label {
+        visibility: hidden;
+    }
+}
+
+&__location {
+    &--label {
+        visibility: hidden; 
+    }
+}
+
+&__date {
+    &--label {
+        visibility: hidden;  
+    }
+}
+}
 }
 
 @include desktop {
 
     .hero {
-
         height: 55vw;
 
         &__name {
             top: 47%;
             left: 11%;
         }
+
+        &__bkgnd {
+
+            &--color {
+                height: 55vw;
+            }
+        }
+
+        &__band {
+
+            &--album {
+
+                &-title {
+                    width: 50%;
+                    top: 20rem;
+                    left: 7rem;
+                }
+
+                &-song {
+                width: 38%;
+                top: 23rem;
+                left: 7rem;
+                }
+            }
+        }
+
+        &__song {
+            width: 35%;
+            left: 40rem;
+        }
+    }
+
+    .showtimes {
+
+        &__label {
+            width: 50%;
+            margin-left: 34%;
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+
+            &--fill {
+                margin-right: 1rem;
+            }
+        } 
+
+        &__list {
+            width: 60%;
+            margin-left: 30%;
+            margin-bottom: 1.5rem;
+        }
+
+        
     }
 }
+

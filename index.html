@@ -61,32 +61,25 @@
 
         <section class="comment">
             <h2 class="comment__title">Join the Conversation</h2>
-            <form class="comment__form"></form>
-            <div class="comment__user">
-            
+            <form class="comment__form">
+                
+            <div class="comment__box">
+                <label class="" for="userName">Name</label>
+                <input class="comment__user--info" type="text" placeholder="Enter your name" name="username" id="username">
             </div>
-            <ul> 
-                <li class="comment__box">
-                    <div class="comment__user">
-                        <img class="comment__user--image" src="./Assets/Images/Mohan-muruge.jpg" alt="User profile Image">
-                    </div>
-                    <div class="comment__user--info">
-                        <label for="userName">Name</label>
-                        <input type="text" placeholder="Enter your name" name="userName" id="userName">
-                    </div>
-                </li>
-                <li class="comment__box">
-                    <div class="comment__form--add">
-                         <label for="comment">Comment</label>
-                        <textarea placeholder="Add a new comment" name="comment " id="comment" cols="10" rows="6"></textarea>
-                    </div>
-                </li>
-            </ul>
-            <button class="comment__button" type="submit">COMMENT</button>
+            <div class="comment__box">
+                <label class="" for="comment">Comment</label>
+                <textarea class="comment__user--info" placeholder="Add a new comment" name="comment " id="comment" cols="10" rows="6"></textarea>
+            </div> 
+                <button class="comment__button" id="comment__btn" onclick="" type="submit">COMMENT</button>
+                <div class="comment__user">
+                    <img class="comment__user--image" src="./Assets/Images/Mohan-muruge.jpg" alt="User profile Image">
+                </div>
+            </form>
             
-
+        
             <div class="comment__section">
-                <ul class="comment__list"></ul>
+                <ul class="comment__posts"></ul>
             </div>
         </section>
         
@@ -95,9 +88,9 @@
             <div class="footer__info">
                 <h2 class="footer__contact--title">Get In Touch</h2>
                 <div class="footer__social">
-                    <img src="../Assets/Icons/SVG/Icon-instagram.svg" alt="Instagram"/>
-                    <img class="footer__icon"src="./Assets/Icons/SVG/Icon-facebook.svg" alt="Facebook"/>
-                    <img src="../Assets/Icons/SVG/Icon-twitter.svg" alt="Twitter"/>
+                    <a href="https://www.instagram.com/"><img src="../Assets/Icons/SVG/Icon-instagram.svg" alt="Instagram"/></a>
+                    <a href="https://www.facebook.com/"><img class="footer__icon" src="./Assets/Icons/SVG/Icon-facebook.svg" alt="Facebook"/></a>
+                    <a href="https://twitter.com/home"><img src="../Assets/Icons/SVG/Icon-twitter.svg" alt="Twitter"/></a> 
                 </div>
                 <div class="footer__contact">
                     <ul>

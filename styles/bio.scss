@@ -2,9 +2,7 @@
 @import './partials/_mixins';
 @import './partials/_fonts';
 
-* {
-    font-family: AnReg;
-}
+
 
 .nav {
 
@@ -30,8 +28,7 @@
         top: 45%;
         left: 5%;
         font-size: $font24;
-        font-family: AnDemi;
-        
+        font-family: AnDemi;  
     }
     &__bkgnd {
         &--color {
@@ -41,11 +38,9 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            opacity: 50%;
-            
+            opacity: 50%;  
         }
-    }
-    
+    }   
 }
 .about {
 
@@ -60,8 +55,7 @@
 
     &__img {
         width: 100%;
-        padding: 1rem 0;
-        
+        padding: 1rem 0;  
     }
 
     &__quote {
@@ -103,53 +97,90 @@
 
 .comment {
 
+    &__section {
+        margin-bottom: 1rem;
+        font-size: $font14;
+        width: 100%;
+
+        &--img {
+            background-color: $mercury-color;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%
+        }
+    }
+
     &__title {
         font-weight: 700;
         line-height: 2rem;
         font-size: $font24;
-        margin: .5rem 1rem 1rem 1rem;
+        margin: .5rem 1rem 0 1rem;
+        font-family: AnDemi;
     }
 
-    &__box {
-        display: flex; 
-        padding-right: 2rem; 
+    &__date {
+        color: $mercury-color;
+        
     }
 
     &__button {
-        margin: 0 1rem 1rem 5rem;
-        width:70%;
+        margin: 1rem 4rem;
+        width: 80%;
+        font-family: AnDemi;
     }
 
     &__user {
-        display: flex;
-        width: 20%;
-        padding-left: 1.5rem;
-        margin-top: 1rem;
+       position: relative;
+       top: -15.5rem;
+       left: 1rem;
+       height: 0;
         
-
         &--image {
-            display: flex;
-            width: 2.3rem;
-            height: 2.3rem;
+            width: 2.25rem;
+            height: 2.25rem;
             border-radius: 50%;
-            //position: relative;
-            //bottom: 12rem;
-           // left: 1rem;
             object-fit: cover;
-            object-position: -5px;   
+            object-position: -5px;  
+        }
+
+        &--info {
+            resize: none; 
+            height: 2.25rem;   
+        }
+
+        &--field {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            width: 80%;
+            margin-left: 4rem;
+            
+        }
+
+        &--div {
+            display: flex;
+            justify-content: center;
+            margin-top:  -2rem;
+            width: 10%;
+
         }
     }
 
-    &__list {
+    &__comments {
+        display: flex;
+        align-items: end;
+        font-size: $font13;
+        margin-left: 4rem;
+        
+    }
 
-        &--info {
-            display: flex;
-            border-top: .0625rem solid $mercury-color;
-            border-bottom: .0625rem solid $mercury-color;
-            padding: 1rem;
-            height: 8rem;
-            
-        }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        border-top: .0625rem solid $mercury-color;
+        border-bottom: .0625rem solid $mercury-color;
+        padding: 1rem;
+        height: 30%;
     }
 
     &__text {
@@ -158,9 +189,8 @@
         
         &--upper {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             padding-bottom: .5rem;
-            height: 1rem;
         }
 
         &--lwr {
@@ -172,8 +202,6 @@
         display: flex;
         justify-content: center;
         width: 20%;
-        
-
 
         &--img {
             background-color: $mercury-color;
@@ -185,51 +213,43 @@
     }
 
     &__form {
-
-        &--add {
-            margin-left: 5rem;
-        }
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem
     }
 
-   
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        font-size: $font13;
+    }
 }
 
+
 label {
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
     color: $silver-color;
 }
 
-textarea,input[type="text"] {
-    margin-right: .75rem;
-    margin-bottom: .75rem;
-    height: 1.5rem;
-    border-radius: .25rem;
-    border: .0625rem $mercury-color solid;
-    padding: .5rem;
-    width: 99%;
-    
-    
-}
-
-textarea {
+#comment {
     height: 5rem;
     padding: .5rem;
-    width: 115%;
     
 }
-
-
-
 
 
 @include tablet {
     
     .nav {
-
+        
         &__left {
             border: none;
             text-decoration: underline .1875rem;
-            text-underline-offset: 1.9rem;  
+            text-underline-offset: 1.6rem;
+            
         }
     }
 
@@ -311,6 +331,81 @@ textarea {
         }
     }
 
+.comment {
+    width: 80%;
+    margin-left: 4.5rem;
+    padding-top: 1.5rem;
+    font-size: $font14;
+
+    &__title {
+        font-size: $font36;
+        position: relative;
+        left: -3rem;    
+    }
+
+    &__user {
+
+
+        &--image {
+            width: 3rem;
+            height: 3rem;
+            margin-left: -1rem;
+            margin-top: -.6rem;
+         
+        }
+        &--field {
+            width: 90%;
+        }
+
+        &--info {
+            font-size: $font14;
+
+        }
+    }
+
+    &__form {
+
+        &--add {
+            width: 90%;
+        }
+    }
+
+    &__button {
+        width: 25%;
+        margin: 1rem 1rem 1rem 76%;
+    }
+
+    &__list {
+        padding: 1.5rem;
+        width: 90%;
+        &--info {
+            height: 7rem;
+        }
+    }
+
+    &__box {
+        width: 90%;
+    }
+
+    &__section {
+        margin-bottom: 1.5rem;
+
+        &--img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__comments {
+        font-size: $font14;
+        margin-top: -1.5rem;
+    }
+}
+
+label {
+    font-size: $font14;
+}
+
 }
 
 @include desktop {
@@ -357,4 +452,16 @@ textarea {
         padding-left: 4rem;
         margin-bottom: 1.25rem;
     }
+
+   .comment {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    &__title {
+        margin-left: -7rem;
+    }
+   } 
 }

@@ -19,10 +19,6 @@
   font-style: normal;
 }
 /****Sizes*****/
-* {
-  font-family: AnReg;
-}
-
 .nav__left {
   border-bottom: #ffffff solid 0.125rem;
   padding-bottom: 0.1875rem;
@@ -95,42 +91,77 @@
   padding-top: 1rem;
 }
 
+.comment__section {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  width: 100%;
+}
+.comment__section--img {
+  background-color: #e1e1e1;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+}
 .comment__title {
   font-weight: 700;
   line-height: 2rem;
   font-size: 1.5rem;
-  margin: 0.5rem 1rem 1rem 1rem;
+  margin: 0.5rem 1rem 0 1rem;
+  font-family: AnDemi;
 }
-.comment__box {
-  display: flex;
-  padding-right: 2rem;
+.comment__date {
+  color: #e1e1e1;
 }
 .comment__button {
-  margin: 0 1rem 1rem 5rem;
-  width: 70%;
+  margin: 1rem 4rem;
+  width: 80%;
+  font-family: AnDemi;
 }
 .comment__user {
-  display: flex;
-  width: 20%;
-  padding-left: 1.5rem;
-  margin-top: 1rem;
+  position: relative;
+  top: -15.5rem;
+  left: 1rem;
+  height: 0;
 }
 .comment__user--image {
-  display: flex;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: -5px;
      object-position: -5px;
 }
-.comment__list--info {
+.comment__user--info {
+  resize: none;
+  height: 2.25rem;
+}
+.comment__user--field {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 80%;
+  margin-left: 4rem;
+}
+.comment__user--div {
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+  width: 10%;
+}
+.comment__comments {
+  display: flex;
+  align-items: end;
+  font-size: 0.8125rem;
+  margin-left: 4rem;
+}
+.comment__list {
+  display: flex;
+  flex-direction: column;
   border-top: 0.0625rem solid #e1e1e1;
   border-bottom: 0.0625rem solid #e1e1e1;
   padding: 1rem;
-  height: 8rem;
+  height: 30%;
 }
 .comment__text {
   margin-left: 1rem;
@@ -138,9 +169,8 @@
 }
 .comment__text--upper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 0.5rem;
-  height: 1rem;
 }
 .comment__text--lwr {
   padding-top: 1rem;
@@ -157,29 +187,28 @@
   height: 2.25rem;
   width: 2.25rem;
 }
-.comment__form--add {
-  margin-left: 5rem;
+.comment__form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.comment__box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  font-size: 0.8125rem;
 }
 
 label {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   color: #afafaf;
 }
 
-textarea, input[type=text] {
-  margin-right: 0.75rem;
-  margin-bottom: 0.75rem;
-  height: 1.5rem;
-  border-radius: 0.25rem;
-  border: 0.0625rem #e1e1e1 solid;
-  padding: 0.5rem;
-  width: 99%;
-}
-
-textarea {
+#comment {
   height: 5rem;
   padding: 0.5rem;
-  width: 115%;
 }
 
 @media (min-width: 768px) {
@@ -187,7 +216,7 @@ textarea {
     border: none;
     -webkit-text-decoration: underline 0.1875rem;
             text-decoration: underline 0.1875rem;
-    text-underline-offset: 1.9rem;
+    text-underline-offset: 1.6rem;
   }
   .hero {
     height: 68vw;
@@ -246,6 +275,60 @@ textarea {
     width: 30%;
     padding: 0.625rem;
   }
+  .comment {
+    width: 80%;
+    margin-left: 4.5rem;
+    padding-top: 1.5rem;
+    font-size: 0.875rem;
+  }
+  .comment__title {
+    font-size: 2.25rem;
+    position: relative;
+    left: -3rem;
+  }
+  .comment__user--image {
+    width: 3rem;
+    height: 3rem;
+    margin-left: -1rem;
+    margin-top: -0.6rem;
+  }
+  .comment__user--field {
+    width: 90%;
+  }
+  .comment__user--info {
+    font-size: 0.875rem;
+  }
+  .comment__form--add {
+    width: 90%;
+  }
+  .comment__button {
+    width: 25%;
+    margin: 1rem 1rem 1rem 76%;
+  }
+  .comment__list {
+    padding: 1.5rem;
+    width: 90%;
+  }
+  .comment__list--info {
+    height: 7rem;
+  }
+  .comment__box {
+    width: 90%;
+  }
+  .comment__section {
+    margin-bottom: 1.5rem;
+  }
+  .comment__section--img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .comment__comments {
+    font-size: 0.875rem;
+    margin-top: -1.5rem;
+  }
+  label {
+    font-size: 0.875rem;
+  }
 }
 @media (min-width: 1280px) {
   .hero {
@@ -279,5 +362,15 @@ textarea {
     margin-right: auto;
     padding-left: 4rem;
     margin-bottom: 1.25rem;
+  }
+  .comment {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .comment__title {
+    margin-left: -7rem;
   }
 }/*# sourceMappingURL=bio.css.map */

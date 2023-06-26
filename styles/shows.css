@@ -19,10 +19,14 @@
   font-style: normal;
 }
 /****Sizes*****/
+* {
+  font-family: AnReg;
+}
+
 .nav__right {
   border-bottom: #ffffff solid 0.125rem;
   padding-bottom: 0.1875rem;
-  font-family: AnDemi;
+  font-family: "AnDemi";
 }
 
 .hero {
@@ -41,7 +45,7 @@
   font-size: 1.5rem;
   word-wrap: normal;
   width: 70%;
-  font-weight: 700;
+  font-family: AnDemi;
 }
 .hero__song {
   position: relative;
@@ -63,10 +67,10 @@
 .showtimes {
   padding: 1.5rem 1rem 0rem 1rem;
 }
-.showtimes--title {
+.showtimes__title {
   font-size: 1.5rem;
-  font-weight: 700;
-  margin-left: 1rem;
+  font-family: AnDemi;
+  margin-top: 0.75rem;
   margin-bottom: 1rem;
 }
 .showtimes__list {
@@ -77,13 +81,30 @@
   padding-bottom: 1rem;
   font-size: 0.8125rem;
 }
-.showtimes__list--title {
+.showtimes__list--items {
   color: #afafaf;
-  margin-top: 0.75rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .showtimes__button {
   margin-top: 1rem;
+}
+.showtimes__venue {
+  color: black;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.showtimes__location {
+  color: black;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.showtimes__date {
+  color: black;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.showtimes__label {
+  visibility: hidden;
 }
 
 #showtime__info {
@@ -97,6 +118,64 @@
             text-decoration: underline 0.1875rem;
     text-underline-offset: 1.9rem;
   }
+  .hero {
+    height: 30rem;
+    background-position-y: -5.5rem;
+  }
+  .hero__bkgnd--color {
+    height: 30rem;
+  }
+  .hero__band--album-title {
+    top: 8rem;
+    font-size: 1.5rem;
+  }
+  .hero__band--album-song {
+    top: 11rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero__song {
+    width: 57%;
+    top: 18rem;
+    height: 8rem;
+  }
+  .showtimes__title {
+    font-size: 2.25rem;
+    margin-left: 10%;
+  }
+  .showtimes__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    visibility: visible;
+    justify-content: space-between;
+    margin: 2rem 0 1rem 2.7rem;
+    color: #afafaf;
+  }
+  .showtimes__label--fill {
+    margin-right: 7rem;
+  }
+  .showtimes__button {
+    width: 9.375rem;
+    margin-left: 3rem;
+  }
+  .showtimes__list--info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .showtimes__list--items {
+    width: 25%;
+  }
+  .showtimes__venue--label {
+    visibility: hidden;
+  }
+  .showtimes__location--label {
+    visibility: hidden;
+  }
+  .showtimes__date--label {
+    visibility: hidden;
+  }
 }
 @media (min-width: 1280px) {
   .hero {
@@ -105,5 +184,36 @@
   .hero__name {
     top: 47%;
     left: 11%;
+  }
+  .hero__bkgnd--color {
+    height: 55vw;
+  }
+  .hero__band--album-title {
+    width: 50%;
+    top: 20rem;
+    left: 7rem;
+  }
+  .hero__band--album-song {
+    width: 38%;
+    top: 23rem;
+    left: 7rem;
+  }
+  .hero__song {
+    width: 35%;
+    left: 40rem;
+  }
+  .showtimes__label {
+    width: 50%;
+    margin-left: 34%;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+  }
+  .showtimes__label--fill {
+    margin-right: 1rem;
+  }
+  .showtimes__list {
+    width: 60%;
+    margin-left: 30%;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=shows.css.map */
