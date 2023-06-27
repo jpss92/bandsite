@@ -99,24 +99,38 @@
         color: black;
         margin-top: .25rem;
         font-size: $font14;
+
+        &--label {
+             color: $silver-color;
+         }
     }
 
     &__location {
         color: black;
         margin-top: .25rem;
         font-size: $font14;
+
+        &--label {
+            color: $silver-color;
+         }
     }
 
     &__date {
         color: black;
         margin-top: .25rem;
         font-size: $font14;
+
+        &--label {
+            color: $silver-color;
+         }
     }
 
     &__label {
         visibility: hidden;
-        
+        height: 0;
     }
+
+    
 }
 
 #showtime__info {
@@ -256,21 +270,21 @@
 
                 &-title {
                     width: 50%;
-                    top: 20rem;
-                    left: 7rem;
+                    top: 32%;
+                    left: 7%;
                 }
 
                 &-song {
                 width: 38%;
-                top: 23rem;
-                left: 7rem;
+                top: 38%;
+                left:7%;
                 }
             }
         }
 
         &__song {
             width: 35%;
-            left: 40rem;
+            left: 50%;
         }
     }
 

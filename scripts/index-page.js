@@ -58,11 +58,25 @@ function commentBio(array) {
         comment.appendChild(userCommentWords);
     }
 }
-
 commentBio(commentsList);
 
 
 
+let post = document.getElementById("comment__post");
+post.addEventListener("submit", evt => {
+    evt.defaultPrevented();
 
+    const username = document.getElementById("username");
+    const comment = document.getElementById("comment");
 
+    if (username.value == '' || comment.value == ''){
+        alert("Please fill all areas")
+    } 
+    else {
+        alert ('Comment successfully posted');
 
+    username.value = "";
+    comment.value = "";
+    }
+    
+});
