@@ -133,3 +133,14 @@ function showList(array) {
 }
 
 showList(showsInfo);
+
+
+
+// $('.showtimes__list').on('click', function() {
+//     $(this).addClass('active');
+//   });
+
+// $(".showtimes__list").focus(function() {
+//     var $this = $(this);
+//     $this.select();
+// });

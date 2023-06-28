@@ -76,10 +76,12 @@
 .showtimes__list {
   border-bottom: 0.0625rem solid;
   border-color: #e1e1e1;
-  margin: 0 0 1rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
   font-size: 0.8125rem;
+  line-height: 3.75rem;
+}
+.showtimes__list :hover {
+  background-color: #e1e1e1;
+  cursor: pointer;
 }
 .showtimes__list--items {
   color: #afafaf;
@@ -87,6 +89,9 @@
 }
 .showtimes__button {
   margin-top: 1rem;
+}
+.showtimes__button:hover {
+  background-color: #000000;
 }
 .showtimes__venue {
   color: black;
@@ -168,6 +173,12 @@
   .showtimes__button {
     width: 9.375rem;
     margin-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .showtimes__list {
+    line-height: 3rem;
+    margin: 0;
+    padding: 0;
   }
   .showtimes__list--info {
     display: flex;

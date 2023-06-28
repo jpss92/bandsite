@@ -77,13 +77,17 @@
     }
     
     &__list {
-       
         border-bottom: .0625rem solid;
         border-color: $mercury-color;
-        margin: 0 0 1rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
         font-size: $font13;
+        line-height: 3.75rem;
+
+    
+        :hover{
+            background-color: $mercury-color;
+            cursor: pointer;
+            
+        }
 
         &--items {
             color: $silver-color;
@@ -93,6 +97,10 @@
     
     &__button {
         margin-top: 1rem;
+
+        &:hover {
+            background-color: $bandsite-dark-black-color;
+        }
     }
 
     &__venue {
@@ -211,9 +219,14 @@
     &__button {
        width: 9.375rem;
        margin-left: 3rem;
+       margin-bottom: 1.5rem;
     }
 
    &__list {
+
+    line-height: 3rem;
+    margin: 0;
+    padding: 0;
 
     &--info {
         display: flex;

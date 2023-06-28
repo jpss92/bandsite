@@ -117,6 +117,9 @@
   width: 80%;
   font-family: AnDemi;
 }
+.comment__button:hover {
+  background-color: #000000;
+}
 .comment__user {
   position: relative;
   top: -15.5rem;

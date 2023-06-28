@@ -121,6 +121,7 @@ button {
     height: 24rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    margin-top: 1.5rem;
   }
   .footer__contact {
     display: flex;

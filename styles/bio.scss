@@ -127,6 +127,10 @@
         margin: 1rem 4rem;
         width: 80%;
         font-family: AnDemi;
+       
+        &:hover {
+            background-color: $bandsite-dark-black-color;
+        }
     }
 
     &__user {
