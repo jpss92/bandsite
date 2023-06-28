@@ -62,15 +62,18 @@ commentBio(commentsList);
 
 
 
-let post = document.getElementById("comment__post");
-post.addEventListener("submit", evt => {
-    evt.defaultPrevented();
+let myPost = document.getElementById("comment__post");
+myPost.addEventListener("submit", evt => {
+    evt.preventDefault();
 
     const username = document.getElementById("username");
     const comment = document.getElementById("comment");
 
     if (username.value == '' || comment.value == ''){
         alert("Please fill all areas")
+
+        username.value = "";
+        comment.value = "";
     } 
     else {
         alert ('Comment successfully posted');
