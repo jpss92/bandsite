@@ -3,23 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Biograpghy</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/global.css">
         <link rel="stylesheet" href="./styles/bio.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
     </head>
 
         <body>
-            <head>
                 <nav class="nav">
                     <img class="nav__logo" src="../Assets/Logo/Logo-bandsite.svg" alt="logo"/>
                     <ul class="nav__list">
-                        <li class="nav__list--item nav__left">Biography</li>
-                        <li class="nav__list--item nav__right">Shows</li>
+                        <li class="nav__list--item nav__left"><a href="./index.html">Biography</a></li>
+                        <li class="nav__list--item nav__right"><a href="./pages/shows.html">Shows</a></li>
                     </ul>
                 </nav>
-            </head>
         
         <section class="hero">
             <div class="hero__bkgnd--color"></div>
@@ -47,21 +46,21 @@
         <section class="gallery">
             <h2 class="gallery__heading">Photo Gallery</h2>
             <div class="gallery__list">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-1.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-2.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-3.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-4.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-5.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-6.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-7.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-8.jpg" alt="">
-                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-9.jpg" alt="">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-1.jpg" alt="Gallery image 1">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-2.jpg" alt="Gallery image 2">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-3.jpg" alt="Gallery image 3">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-4.jpg" alt="Gallery image 4">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-5.jpg" alt="Gallery image 5">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-6.jpg" alt="Gallery image 6">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-7.jpg" alt="Gallery image 7">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-8.jpg" alt="Gallery image 8">
+                <img class="gallery__list--item" src="../Assets/Images/Photo-gallery-9.jpg" alt="Gallery image 9">
             </div>      
         </section>
 
         <section class="comment" >
             <h2 class="comment__title">Join the Conversation</h2>
-            <form class="comment__form" method="post"  action="" id="comment__post">
+            <form class="comment__form" method="post"  action="" id="comment__post" name="commentInfo">
                 
             <div class="comment__box" >
                 <label for="username">Name</label>
@@ -69,9 +68,9 @@
             </div>
             <div class="comment__box">
                 <label class="comment" for="comment">Comment</label>
-                <textarea class="comment__user--info" placeholder="Add a new comment" name="comment " id="comment" cols="10" rows="6"></textarea>
+                <textarea class="comment__user--info" placeholder="Add a new comment" name="comment" id="comment" cols="10" rows="6"></textarea>
             </div> 
-                <button class="comment__button" submit="submit" id="comment__btn">COMMENT</button>
+                <button class="comment__button" id="comment__btn">COMMENT</button>
                 <div class="comment__user">
                     <img class="comment__user--image" src="./Assets/Images/Mohan-muruge.jpg" alt="User profile Image">
                 </div>

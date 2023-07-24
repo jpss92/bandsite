@@ -30,49 +30,43 @@ const filler = document.createElement("p");
 filler.classList.add("showtimes__label--fill")
 labelsDiv.appendChild(filler);
 
-
-
 const showsInfo = [
-    {
-        date: "Mon Spet 06 2021",
-        venue: "Ronald Lane",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Tue Sept 21 2021",
-        venue: "Peir 3 East",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Fri Oct 15 2021",
-        venue: "View Lounge",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Sat Nov 06 2021",
-        venue: "Hyatt Agency",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Fri Nov 26 2021",
-        venue: "Moscow Center",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Wed Dec 15 2021",
-        venue: "Press Club",
-        location: "San Francisco, CA"
-    }
+    // {
+    //     date: "Mon Sept 06 2021",
+    //     venue: "Ronald Lane",
+    //     location: "San Francisco, CA"
+    // },
+    // {
+    //     date: "Tue Sept 21 2021",
+    //     venue: "Peir 3 East",
+    //     location: "San Francisco, CA"
+    // },
+    // {
+    //     date: "Fri Oct 15 2021",
+    //     venue: "View Lounge",
+    //     location: "San Francisco, CA"
+    // },
+    // {
+    //     date: "Sat Nov 06 2021",
+    //     venue: "Hyatt Agency",
+    //     location: "San Francisco, CA"
+    // },
+    // {
+    //     date: "Fri Nov 26 2021",
+    //     venue: "Moscow Center",
+    //     location: "San Francisco, CA"
+    // },
+    // {
+    //     date: "Wed Dec 15 2021",
+    //     venue: "Press Club",
+    //     location: "San Francisco, CA"
+    // }
 ]
-
-
 
 function showList(array) {
     const showTime = document.querySelector(".showtimes");
    
-
     for( let i = 0; i < array.length; i++) {
-
 
         const unordLi = document.createElement("ul");
         unordLi.classList.add("showtimes__list");
@@ -107,7 +101,7 @@ function showList(array) {
 
         const venue = document.createElement("p");
         venue.classList.add("showtimes__venue");
-        venue.innerText = array[i].venue;
+        venue.innerText = array[i].place;
         venueDiv.appendChild(venue);
 
         const locationLabel = document.createElement("div");
@@ -128,19 +122,24 @@ function showList(array) {
         ticketBtn.classList.add("showtimes__button");
         ticketBtn.innerText = "BUY TICKETS";
         showLi.appendChild(ticketBtn);
-
     }
 }
 
-showList(showsInfo);
+let showDates = [];
+const fetchShowDates = () => {
+    axios
+        .get('https://project-1-api.herokuapp.com/showdates?api_key=58ad2596-7c3c-4b66-9ca3-1f8b4c991f73')
+        .then((response) => {
+        console.log(response.data);
+        showDates = response.data;
+        console.log(showDates);
+        showDates.forEach((showsInfo) => showList(showsInfo)); 
 
+    showsInfo.push(showDates);
+    showList.innerHTML = "";
+    showsInfo.forEach((showsInfo) => showList(showsInfo));
+})
 
+}
+fetchShowDates();
 
-// $('.showtimes__list').on('click', function() {
-//     $(this).addClass('active');
-//   });
-
-// $(".showtimes__list").focus(function() {
-//     var $this = $(this);
-//     $this.select();
-// });

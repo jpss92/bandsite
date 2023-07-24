@@ -28,20 +28,20 @@
 
 .nav {
   background-color: #323232;
-  text-align: center;
-  height: 4rem;
+  height: 5rem;
   color: #ffffff;
-  padding: 1rem;
-  padding-bottom: 0;
 }
 .nav__list--item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 50%;
   font-size: 0.875rem;
   line-height: 2rem;
 }
 .nav__logo {
   width: 7.5rem;
+  margin-left: 20rem;
+  margin-top: 1rem;
 }
 .nav__left {
   position: absolute;
@@ -51,6 +51,7 @@
 .nav__right {
   position: absolute;
   top: 2.6rem;
+  right: 0rem;
 }
 
 button {
